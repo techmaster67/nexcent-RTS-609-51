@@ -1,0 +1,39 @@
+.desktop-nav, .mobile-nav {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 1;
+    box-shadow: $box-shadow;
+}
+
+.desktop-nav__wrap {
+    padding: 22px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (max-width: $breakpoint-lg) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    gap: 51px; 
+    @media (max-width: $breakpoint-lg) {
+        gap: 30px;
+    }
+}
+
+.nav__buttons {
+    display: flex;
+    gap: 14px;
+    
+    @media (max-width: $breakpoint-xl) {
+        display: none;
+    }
+}
+
+.nav__list-el_active {
+    font-weight: 500;
+}

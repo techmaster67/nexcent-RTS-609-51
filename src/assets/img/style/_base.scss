@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: $base-color;
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 119%;
+    font-weight: 600;
+    color: $grey;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+
+    span {
+        color: $primary;
+    }
+    @media (max-width: $breakpoint-lg) {
+        font-size: 48px; 
+    }
+    @media (max-width: $breakpoint-md) {
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: $grey;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+
+    span {
+        color: $primary;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: $grey;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 20px;
+    color: $grey;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+a {
+    color: $dark;
+    text-decoration: none;
+}
+
+.container {
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-xl) {
+        max-width: $container-lg;
+    }
+    @media (max-width: $breakpoint-lg) {
+        max-width: $container-md;
+    }
+    @media (max-width: $breakpoint-md) {
+        max-width: $container-sm;
+    }
+    @media (max-width: $breakpoint-sm) {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+}
+
+
+button{
+    cursor: pointer;
+}
+
+.button_light-sm {
+    font-family: "Inter", serif;
+    background-color: $light;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $primary
+}
+
+.button_primary-sm {
+    font-family: "Inter", serif;
+    color: $white;
+    background-color: $primary;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.button_primary-xl {
+    font-family: "Inter", serif;
+    color: $white;
+    background-color: $primary;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.button_icon{
+    padding: 12px;
+    img{
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,50 @@
+.promo {
+    background-color: $light;
+    padding: 180px 0px 96px; // Ваш padding с учетом фиксированной навигации
+    
+    @media (max-width: $breakpoint-md) {
+        padding: 121px 0 60px; // Ваше значение
+    }
+}
+
+.promo__content {
+    display: flex;
+    align-items: center;
+    gap: 111px; // Ваше значение
+    
+    @media (max-width: $breakpoint-lg) {
+        gap: 40px;
+
+        img {
+            width: 280px;
+        }
+    }
+    
+    @media (max-width: $breakpoint-md) {
+        flex-direction: column-reverse;
+    }
+    
+    @media (max-width: $breakpoint-sm) { // Новый брейкпоинт
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.promo__group {
+    button {
+        font-size: 17px;
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+        }
+    }
+    
+    p {
+        margin-bottom: 32px;
+        letter-spacing: 0.09px; // Ваш пиксель-перфект
+    }
+    
+    h1 {
+        letter-spacing: 2.22px; // Ваш пиксель-перфект
+    }
+}
