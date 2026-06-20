@@ -1,0 +1,15 @@
+.desktop-navigation {
+    padding: 22px 0;
+    .nav-link {
+        color: black;
+    }
+}
+
+.desktop-navigation__list-element_active {
+    font-weight: 500;
+}
+
+.desktop-navigation__buttons {
+    display: flex;
+    gap: 14px;
+}

@@ -1,56 +1,45 @@
-<script setup> </script>
-<template>
-    <header>
-        <nav class="desktop-nav">
-            <div class="container">
-                <div class="desktop-nav__wrap">
-                    <img src="@/assets/img/logo.svg" alt="Nextcent" class="desktop-nav__logo">
-                    <ul class="nav__list">
-                        <li class="nav__list-el_active"><a href="#">Home</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Feature</a></li>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">Testimonial</a></li>
-                        <li><a href="">FAQ</a></li>
-                    </ul>
-                    <div class="nav__buttons">
-                        <button class="button_light-sm">Login</button>
-                        <button class="button_primary-sm">Sign up</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <nav class="mobile-nav opened">
-            <div class="mobile-nav__wrap">
+<script setup></script>
 
-                <div class="container">
-                    <div class="mobile-nav__header">
-                        <img src="@/assets/img/logo-sm.svg" alt="">
-                        <button class="mobile-nav__header-button">
-                            <img src="@/assets/img/menu-open.svg" alt="" class="icon_menu-open">
-                            <img src="@/assets/img/menu-close.svg" alt="" class="icon_menu-close">
-                        </button>
-                    </div>
-                    <div class="mobile-nav__content">
-                        <ul class="nav__list">
-                            <li class="nav__list-el_active"><a href="#">Home</a></li>
-                            <li><a href="">Service</a></li>
-                            <li><a href="">Feature</a></li>
-                            <li><a href="">Product</a></li>
-                            <li><a href="">Testimonial</a></li>
-                            <li><a href="">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav__buttons">
-                        <button class="button_light-sm">Login</button>
-                        <button class="button_primary-sm">Sign up</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+<template>
+  <header>
+    <nav class="navbar navbar-expand-lg desktop-navigation">
+      <div class="container">
+        <a class="navbar-brand flex-grow-1" href="#">
+          <img src="@/assets/img/Logo.svg" alt="Nexcent">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 row-gap-2 column-gap-4 mt-2 mt-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link desktop-navigation__list-element_active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-end flex-grow-1 flex-column flex-lg-row">
+            <button class="button_light-s">Login</button>
+            <button class="button_primary-s">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
